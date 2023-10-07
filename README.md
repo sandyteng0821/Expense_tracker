@@ -60,6 +60,42 @@ python expense_tracker.py export --db expenses.csv --output_file expenses.xlsx
 - `--category`: View expenses for a specific category.
 - `--output_file`: Specify the output file for exporting expenses.
 
+### Demo
+```
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py reset --db D:\Python-programming\expenses.csv
+Expense file reset.
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py add --db D:\Python-programming\expenses.csv
+Enter expense category: Food
+Enter expense amount ($): 150
+Expense added successfully.
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py add --db D:\Python-programming\expenses.csv
+Enter expense category: Food
+Enter expense amount ($): 70
+Expense added successfully.
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py add --db D:\Python-programming\expenses.csv
+Enter expense category: Housing
+Enter expense amount ($): 10000
+Expense added successfully.
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py add --db D:\Python-programming\expenses.csv
+Enter expense category: Groceries
+Enter expense amount ($): 80
+Expense added successfully.
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py add --db D:\Python-programming\expenses.csv
+Enter expense category: Groceries
+Enter expense amount ($): 90
+Expense added successfully.
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py view --db D:\Python-programming\expenses.csv
+Expenses:
+Date: 2023-10-07, Category: Food, Amount: $150
+Date: 2023-10-07, Category: Food, Amount: $70
+Date: 2023-10-07, Category: Housing, Amount: $10000
+Date: 2023-10-07, Category: Groceries, Amount: $80
+Date: 2023-10-07, Category: Groceries, Amount: $90
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py export --db D:\Python-programming\expenses.csv
+Please specify the output Excel directory using the --output_file option.
+PS C:\Users\USER> python D:\Python-programming\expense_tracker.py export --db D:\Python-programming\expenses.csv --output_file D:\Python-programming\expense_tracker.xlsx   Expenses exported to D:\Python-programming\expense_tracker.xlsx.
+```
+
 ## Author
 
 - Author: sandyteng
